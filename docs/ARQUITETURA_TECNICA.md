@@ -117,7 +117,7 @@ Dependencias de desenvolvimento (principais):
 ### 5.3 Dependencias externas (sistema)
 - Node.js 18+
 - npm
-- Python 3 (opcional, para stems)
+- Python 3 (opcional, para stems) v3.10
 - ffmpeg
 - yt-dlp
 - demucs ou spleeter (opcional)

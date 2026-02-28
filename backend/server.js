@@ -19,6 +19,8 @@ const {
 const app = express();
 const PORT = process.env.PORT || 3001;
 const DEMUCS_MODEL = process.env.DEMUCS_MODEL || 'htdemucs';
+const VENV_PYTHON_PATH = path.join(__dirname, 'venv_spleeter', 'bin', 'python');
+const PYTHON_CMD = fs.existsSync(VENV_PYTHON_PATH) ? VENV_PYTHON_PATH : 'python3';
 const FRONTEND_ORIGINS = (process.env.FRONTEND_ORIGINS || '')
   .split(',')
   .map((origin) => origin.trim())
@@ -558,7 +560,7 @@ function tryDemucs(sourcePath, tempOutputDir) {
     sourcePath,
   ];
 
-  const result = runCommandWithResult('python3', args);
+  const result = runCommandWithResult(PYTHON_CMD, args);
   if (!result.ok) return null;
 
   const trackName = path.parse(sourcePath).name;
@@ -583,7 +585,7 @@ function trySpleeter(sourcePath, tempOutputDir) {
     sourcePath,
   ];
 
-  const result = runCommandWithResult('python3', args);
+  const result = runCommandWithResult(PYTHON_CMD, args);
   if (!result.ok) return null;
 
   const trackName = path.parse(sourcePath).name;
@@ -597,14 +599,14 @@ function trySpleeter(sourcePath, tempOutputDir) {
 }
 
 function getAvailableSeparationEngine() {
-  const hasPython = commandAvailable('python3', ['--version']);
+  const hasPython = commandAvailable(PYTHON_CMD, ['--version']);
   if (!hasPython) return null;
 
-  if (runCommandWithResult('python3', ['-m', 'demucs', '--help']).ok) {
+  if (runCommandWithResult(PYTHON_CMD, ['-m', 'demucs', '--help']).ok) {
     return 'demucs';
   }
 
-  if (runCommandWithResult('python3', ['-m', 'spleeter', 'separate', '-h']).ok) {
+  if (runCommandWithResult(PYTHON_CMD, ['-m', 'spleeter', 'separate', '-h']).ok) {
     return 'spleeter';
   }
 
