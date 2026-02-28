@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": "1bc0da8f-5f3d-428a-bde4-c242f68da0d4",
+      "nome": "Everaldo Nascimento",
+      "email": "everaldobass@gmail.com",
+      "senha": "Admin@#1020",
+      "perfil": "USER",
+      "ativo": true,
+      "dataCadastro": "2026-02-28T00:34:17.348Z"
+    }
+  ],
+  "songs": [
+    {
+      "id": "b87c50bf-de29-4447-bb7f-9097a8262312",
+      "titulo": "Blinding Lights - The Weeknd",
+      "artista": "The Weeknd",
+      "genero": "Rock",
+      "duracao": "4:53",
+      "caminhoArquivo": "/uploads/294a6b19-583b-4767-a5de-e8ea8968152c.mp3",
+      "thumbnail": "https://picsum.photos/300/300?random=1772238979475",
+      "usuarioId": "1bc0da8f-5f3d-428a-bde4-c242f68da0d4",
+      "historyId": "2f5fe616-f5af-4e16-8dc7-1eb067848476",
+      "favorito": false,
+      "dataUpload": "2026-02-28T00:36:19.476Z"
+    },
+    {
+      "id": "6780f984-2c2c-4b99-8ed3-5894b6d7403b",
+      "titulo": "Billie Jean - Michael Jackson",
+      "artista": "Michael Jackson",
+      "genero": "Rock",
+      "duracao": "2:15",
+      "caminhoArquivo": "/uploads/90a89dca-ae95-4cfb-9125-9a243fd4f9f2.mp3",
+      "thumbnail": "https://picsum.photos/300/300?random=1772239236115",
+      "usuarioId": "1bc0da8f-5f3d-428a-bde4-c242f68da0d4",
+      "historyId": "98857500-5783-4819-b52d-d592139a785d",
+      "favorito": false,
+      "dataUpload": "2026-02-28T00:40:36.115Z"
+    },
+    {
+      "id": "e77d567a-ddcb-4a37-ac3e-fbaea6da76e2",
+      "titulo": "Bohemian Rhapsody - Queen",
+      "artista": "Queen",
+      "genero": "Hip Hop",
+      "duracao": "2:41",
+      "caminhoArquivo": "/uploads/8a135085-5bba-436f-ab10-9962bb39e5a9.mp3",
+      "thumbnail": "https://picsum.photos/300/300?random=1772239342979",
+      "usuarioId": "1bc0da8f-5f3d-428a-bde4-c242f68da0d4",
+      "historyId": "954cdb4e-c465-4f70-8712-ca67b65a0221",
+      "favorito": false,
+      "dataUpload": "2026-02-28T00:42:22.979Z"
+    }
+  ],
+  "stems": [
+    {
+      "id": "59eeb3e5-780a-491a-b954-ca9a5ef7cc68",
+      "musicaId": "e77d567a-ddcb-4a37-ac3e-fbaea6da76e2",
+      "tipo": "VOCAL",
+      "caminhoArquivo": "/stems/e77d567a-ddcb-4a37-ac3e-fbaea6da76e2_vocal.mp3",
+      "volume": 100,
+      "dataCriacao": "2026-02-28T00:42:22.979Z"
+    },
+    {
+      "id": "b248790a-c8b6-42fc-9850-362d62bd1aea",
+      "musicaId": "e77d567a-ddcb-4a37-ac3e-fbaea6da76e2",
+      "tipo": "BATERIA",
+      "caminhoArquivo": "/stems/e77d567a-ddcb-4a37-ac3e-fbaea6da76e2_bateria.mp3",
+      "volume": 100,
+      "dataCriacao": "2026-02-28T00:42:22.980Z"
+    },
+    {
+      "id": "82916b0d-6282-483c-8c7a-567b421a334d",
+      "musicaId": "e77d567a-ddcb-4a37-ac3e-fbaea6da76e2",
+      "tipo": "BAIXO",
+      "caminhoArquivo": "/stems/e77d567a-ddcb-4a37-ac3e-fbaea6da76e2_baixo.mp3",
+      "volume": 100,
+      "dataCriacao": "2026-02-28T00:42:22.980Z"
+    },
+    {
+      "id": "7c4204e2-c94d-4e23-a826-c2feccb8735b",
+      "musicaId": "e77d567a-ddcb-4a37-ac3e-fbaea6da76e2",
+      "tipo": "OUTRO",
+      "caminhoArquivo": "/stems/e77d567a-ddcb-4a37-ac3e-fbaea6da76e2_outro.mp3",
+      "volume": 100,
+      "dataCriacao": "2026-02-28T00:42:22.980Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "2f5fe616-f5af-4e16-8dc7-1eb067848476",
+      "url": "https://youtu.be/nQWFzMvCfLE?si=l84g-cFLCto3EQXx",
+      "status": "DONE",
+      "usuarioId": "1bc0da8f-5f3d-428a-bde4-c242f68da0d4",
+      "dataInicio": "2026-02-28T00:36:17.474Z",
+      "titulo": "Blinding Lights - The Weeknd",
+      "thumbnail": "https://picsum.photos/300/300?random=1772238979475",
+      "dataFim": "2026-02-28T00:36:19.476Z"
+    },
+    {
+      "id": "98857500-5783-4819-b52d-d592139a785d",
+      "url": "https://www.youtube.com/watch?v=k5-BwuJdQE8&list=RDk5-BwuJdQE8&start_radio=1",
+      "status": "DONE",
+      "usuarioId": "1bc0da8f-5f3d-428a-bde4-c242f68da0d4",
+      "dataInicio": "2026-02-28T00:40:34.113Z",
+      "titulo": "Billie Jean - Michael Jackson",
+      "thumbnail": "https://picsum.photos/300/300?random=1772239236115",
+      "dataFim": "2026-02-28T00:40:36.115Z"
+    },
+    {
+      "id": "954cdb4e-c465-4f70-8712-ca67b65a0221",
+      "url": "https://www.youtube.com/watch?v=k5-BwuJdQE8&list=RDk5-BwuJdQE8&start_radio=1",
+      "status": "DONE",
+      "usuarioId": "1bc0da8f-5f3d-428a-bde4-c242f68da0d4",
+      "dataInicio": "2026-02-28T00:42:20.976Z",
+      "titulo": "Bohemian Rhapsody - Queen",
+      "thumbnail": "https://picsum.photos/300/300?random=1772239342979",
+      "dataFim": "2026-02-28T00:42:22.980Z"
+    }
+  ]
+}
