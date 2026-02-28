@@ -57,9 +57,9 @@ npm install
 #### 2. Instalar dependências do Backend
 
 ```bash
-cd backend
+cd ../backend
 npm install
-cd ..
+cd ../frontend
 ```
 
 #### 2.1 (Opcional) Instalar engine de separação real
@@ -83,13 +83,13 @@ cp .env.example .env
 Backend:
 
 ```bash
-cp backend/.env.example backend/.env
+cp ../backend/.env.example ../backend/.env
 ```
 
 #### 3. Iniciar Backend
 
 ```bash
-cd backend
+cd ../backend
 node server.js
 ```
 
@@ -110,16 +110,17 @@ Por padrão, o frontend consome a API via `VITE_API_URL=/api`, usando proxy do V
 ## 📁 Estrutura do Projeto
 
 ```
-app/
-├── backend/                 # Backend Node.js
-│   ├── database/           
-│   │   ├── db.js           # Banco de dados SQLite3
+projeto-kimi-conversor-mp3/
+├── backend/                 # Backend Node.js (API)
+│   ├── database/
+│   │   ├── db.js           # Banco de dados JSON
 │   │   └── uuid-polyfill.js
 │   ├── uploads/            # MP3s convertidos
 │   ├── stems/              # Stems separados
 │   ├── server.js           # Servidor Express
 │   └── package.json
-├── src/
+└── frontend/               # Aplicação React (Vite)
+    ├── src/
 │   ├── components/
 │   │   ├── StemPlayer.tsx  # Player com controles de stems
 │   │   ├── Sidebar.tsx
@@ -129,9 +130,9 @@ app/
 │   │   └── api.ts          # APIs do backend
 │   ├── store/              # Zustand stores
 │   └── types/              # Tipos TypeScript
-├── dist/                   # Build de produção
-├── start-all.sh            # Script de inicialização
-└── package.json
+    ├── dist/               # Build de produção
+    ├── start-all.sh        # Script de inicialização local
+    └── package.json
 ```
 
 ---
@@ -255,7 +256,7 @@ npm run preview  # Preview do build
 
 ### Backend
 ```bash
-cd backend
+cd ../backend
 node server.js           # Iniciar servidor
 node start.js            # Script com logs coloridos
 ```
@@ -284,10 +285,10 @@ node start.js            # Script com logs coloridos
 Verifique se o backend está rodando em http://localhost:3001
 
 ### Erro: "Port already in use"
-Mude a porta no arquivo `backend/server.js`
+Mude a porta no arquivo `../backend/server.js`
 
 ### Limpar dados
-Delete o arquivo `backend/database/database.json` para resetar o banco
+Delete o arquivo `../backend/database/database.json` para resetar o banco
 
 ---
 

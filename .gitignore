@@ -19,27 +19,27 @@ pnpm-debug.log*
 # Python virtual envs
 .venv/
 venv/
-app/backend/venv_spleeter/
+backend/venv_spleeter/
 __pycache__/
 *.pyc
 
 # Node dependencies
 node_modules/
-app/node_modules/
-app/backend/node_modules/
+frontend/node_modules/
+backend/node_modules/
 
 # Build outputs
 build/
 dist/
-app/dist/
-app/backend/dist/
+frontend/dist/
+backend/dist/
 
 # Runtime data / generated media
-app/backend/uploads/
-app/backend/stems/
-app/backend/database/database.sqlite
-app/backend/database/database.sqlite-*
-app/backend/database/*.db
+backend/uploads/
+backend/stems/
+backend/database/database.sqlite
+backend/database/database.sqlite-*
+backend/database/*.db
 
 # Temp files
 *.tmp

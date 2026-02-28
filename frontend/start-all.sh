@@ -1,5 +1,8 @@
 #!/bin/bash
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BACKEND_DIR="$SCRIPT_DIR/../backend"
+
 echo "🚀 Iniciando YouTube MP3 Converter..."
 echo ""
 
@@ -10,10 +13,10 @@ NC='\033[0m' # No Color
 
 # Iniciar backend em background
 echo -e "${BLUE}📡 Iniciando Backend...${NC}"
-cd backend
+cd "$BACKEND_DIR"
 node server.js &
 BACKEND_PID=$!
-cd ..
+cd "$SCRIPT_DIR"
 
 sleep 2
 
