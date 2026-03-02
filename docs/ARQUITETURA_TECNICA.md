@@ -1,5 +1,9 @@
 # Documentacao Tecnica e Arquitetura
 
+<img src="/docs/img/login.png/" alt="Logo" width="300" height="auto">
+
+<img src="/docs/img/mp3-playlist.png/" alt="Logo" width="300" height="auto">
+
 ## 1. Visao geral
 Projeto dividido em dois modulos independentes:
 - `frontend/`: SPA React (Vite + TypeScript) responsavel pela UI e consumo da API.
@@ -142,6 +146,10 @@ cd ../backend && npm install
 ```
 
 ### 7.2 Rodar backend
+- python3 
+- source venv_spleeter/bin/activate
+
+
 ```bash
 cd backend
 npm run dev
